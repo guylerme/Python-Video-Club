@@ -1,0 +1,61 @@
+[PyScripter]
+Version=1.9.9.6
+
+[Project]
+ClassName=TProjectRootNode
+StoreRelativePaths=FALSE
+ShowFileExtensions=FALSE
+
+[Project\ChildNodes\Node0]
+ClassName=TProjectFilesNode
+
+[Project\ChildNodes\Node0\ChildNodes\Node0]
+ClassName=TProjectFolderNode
+Name=fontes
+
+[Project\ChildNodes\Node0\ChildNodes\Node0\ChildNodes\Node0]
+ClassName=TProjectFileNode
+FileName=D:\Documents and Settings\cy85\Meus documentos\Pessoal\Pos\Software Livre\trabalho\Python Video Club\copia.py
+
+[Project\ChildNodes\Node0\ChildNodes\Node0\ChildNodes\Node1]
+ClassName=TProjectFileNode
+FileName=D:\Documents and Settings\cy85\Meus documentos\Pessoal\Pos\Software Livre\trabalho\Python Video Club\emprestimo.py
+
+[Project\ChildNodes\Node0\ChildNodes\Node0\ChildNodes\Node2]
+ClassName=TProjectFileNode
+FileName=D:\Documents and Settings\cy85\Meus documentos\Pessoal\Pos\Software Livre\trabalho\Python Video Club\socio.py
+
+[Project\ChildNodes\Node0\ChildNodes\Node0\ChildNodes]
+Count=3
+
+[Project\ChildNodes\Node0\ChildNodes\Node1]
+ClassName=TProjectFolderNode
+Name=testes
+
+[Project\ChildNodes\Node0\ChildNodes\Node1\ChildNodes\Node0]
+ClassName=TProjectFileNode
+FileName=D:\Documents and Settings\cy85\Meus documentos\Pessoal\Pos\Software Livre\trabalho\Teste Unitario\copia_test.py
+
+[Project\ChildNodes\Node0\ChildNodes\Node1\ChildNodes\Node1]
+ClassName=TProjectFileNode
+FileName=D:\Documents and Settings\cy85\Meus documentos\Pessoal\Pos\Software Livre\trabalho\Teste Unitario\emprestimo_test.py
+
+[Project\ChildNodes\Node0\ChildNodes\Node1\ChildNodes\Node2]
+ClassName=TProjectFileNode
+FileName=D:\Documents and Settings\cy85\Meus documentos\Pessoal\Pos\Software Livre\trabalho\Teste Unitario\socio_test.py
+
+[Project\ChildNodes\Node0\ChildNodes\Node1\ChildNodes]
+Count=3
+
+[Project\ChildNodes\Node0\ChildNodes]
+Count=2
+
+[Project\ChildNodes\Node1]
+ClassName=TProjectRunConfiguationsNode
+
+[Project\ChildNodes]
+Count=2
+
+[Project\ExtraPythonPath]
+Count=0
+
