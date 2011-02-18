@@ -1,8 +1,4 @@
 class Emprestimo():
-<<<<<<< HEAD
-    valorFixo = 4
-=======
->>>>>>> 0d362ab858545eeb529b35499edac5a732bfc1dd
 
     def __init__(self):
         self.listaEmprestimo = []
@@ -16,7 +12,7 @@ class Emprestimo():
 
 
 
-        self.listaEmprestimo.append
+       # self.listaEmprestimo.append
 
 ##    def devolverFitaComData(self, v_dataFim, v_valor):
 ##        self.dataFim = v_dataFim
