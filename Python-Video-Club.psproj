@@ -15,18 +15,30 @@ Name=fontes
 
 [Project\ChildNodes\Node0\ChildNodes\Node0\ChildNodes\Node0]
 ClassName=TProjectFileNode
-FileName=D:\Documents and Settings\cy85\Meus documentos\Pessoal\Pos\Software Livre\trabalho\Python Video Club\copia.py
+FileName=F:\Guylerme\Pos\Software Livre\trabalho\fontes\copia.py
 
 [Project\ChildNodes\Node0\ChildNodes\Node0\ChildNodes\Node1]
 ClassName=TProjectFileNode
-FileName=D:\Documents and Settings\cy85\Meus documentos\Pessoal\Pos\Software Livre\trabalho\Python Video Club\emprestimo.py
+FileName=F:\Guylerme\Pos\Software Livre\trabalho\fontes\Copia_Test.py
 
 [Project\ChildNodes\Node0\ChildNodes\Node0\ChildNodes\Node2]
 ClassName=TProjectFileNode
-FileName=D:\Documents and Settings\cy85\Meus documentos\Pessoal\Pos\Software Livre\trabalho\Python Video Club\socio.py
+FileName=F:\Guylerme\Pos\Software Livre\trabalho\fontes\emprestimo.py
+
+[Project\ChildNodes\Node0\ChildNodes\Node0\ChildNodes\Node3]
+ClassName=TProjectFileNode
+FileName=F:\Guylerme\Pos\Software Livre\trabalho\fontes\ficha_emprestimo.py
+
+[Project\ChildNodes\Node0\ChildNodes\Node0\ChildNodes\Node4]
+ClassName=TProjectFileNode
+FileName=F:\Guylerme\Pos\Software Livre\trabalho\fontes\socio.py
+
+[Project\ChildNodes\Node0\ChildNodes\Node0\ChildNodes\Node5]
+ClassName=TProjectFileNode
+FileName=F:\Guylerme\Pos\Software Livre\trabalho\fontes\Socio_Test.py
 
 [Project\ChildNodes\Node0\ChildNodes\Node0\ChildNodes]
-Count=3
+Count=6
 
 [Project\ChildNodes\Node0\ChildNodes\Node1]
 ClassName=TProjectFolderNode
