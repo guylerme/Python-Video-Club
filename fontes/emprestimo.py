@@ -1,5 +1,5 @@
 class Emprestimo():
-    self.valorFixo = 4
+    valorFixo = 4
 
     def __init__(self, v_inscricao, v_dataInicio, v_codigoFita):
         self.listaEmprestimo = []
