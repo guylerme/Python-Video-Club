@@ -1,14 +1,22 @@
 class Emprestimo():
+<<<<<<< HEAD
     valorFixo = 4
+=======
+>>>>>>> 0d362ab858545eeb529b35499edac5a732bfc1dd
 
-    def __init__(self, v_inscricao, v_dataInicio, v_codigoFita):
+    def __init__(self):
         self.listaEmprestimo = []
+        self.valorFixo = 4
 
+
+    def pegarFita(self, v_inscricao, v_dataInicio, v_codigoFita):
         self.inscricao = v_inscricao
         self.dataInicio = v_dataInicio
         self.codigo_fita = v_codigoFita
 
 
+
+        self.listaEmprestimo.append
 
 ##    def devolverFitaComData(self, v_dataFim, v_valor):
 ##        self.dataFim = v_dataFim
