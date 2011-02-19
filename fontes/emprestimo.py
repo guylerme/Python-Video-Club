@@ -22,7 +22,7 @@ class Emprestimo():
 ##        self.dataFim = v_dataFim
 ##        self.valorPago = v_valor
 
-    def devolverFita(self, v_codigo_fita):
+    def devolverFita(self):
         data =datetime.datetime.today()
         self.dataFim = str(data.day) + '/' + str(data.month) +'/' + str(data.year)
 
