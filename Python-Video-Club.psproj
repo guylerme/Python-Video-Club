@@ -31,18 +31,22 @@ FileName=H:\Guylerme\Pos\Software Livre\trabalho\fontes\Emprestimo_Test.py
 
 [Project\ChildNodes\Node0\ChildNodes\Node0\ChildNodes\Node4]
 ClassName=TProjectFileNode
-FileName=H:\Guylerme\Pos\Software Livre\trabalho\fontes\socio.py
+FileName=H:\Guylerme\Pos\Software Livre\trabalho\fontes\principal.py
 
 [Project\ChildNodes\Node0\ChildNodes\Node0\ChildNodes\Node5]
 ClassName=TProjectFileNode
-FileName=H:\Guylerme\Pos\Software Livre\trabalho\fontes\Socio_Test.py
+FileName=H:\Guylerme\Pos\Software Livre\trabalho\fontes\socio.py
 
 [Project\ChildNodes\Node0\ChildNodes\Node0\ChildNodes\Node6]
+ClassName=TProjectFileNode
+FileName=H:\Guylerme\Pos\Software Livre\trabalho\fontes\Socio_Test.py
+
+[Project\ChildNodes\Node0\ChildNodes\Node0\ChildNodes\Node7]
 ClassName=TProjectFileNode
 FileName=H:\Guylerme\Pos\Software Livre\trabalho\fontes\teste_emprestimo.py
 
 [Project\ChildNodes\Node0\ChildNodes\Node0\ChildNodes]
-Count=7
+Count=8
 
 [Project\ChildNodes\Node0\ChildNodes\Node1]
 ClassName=TProjectFolderNode
