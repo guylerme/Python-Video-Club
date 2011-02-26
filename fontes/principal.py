@@ -98,15 +98,24 @@ class Principal():
         frame = tkinter.Frame()
         frame.pack()
 
-        self.button = tkinter.Button(frame, text="QUIT", fg="red",
-                         command=frame.quit)
-        self.button.pack(side=tkinter.LEFT)
+        self.pergunta = tkinter.Label(frame, text="Escolha a opção desejada:")
+        self.pergunta.pack(side=tkinter.TOP)
 
-        self.hi_there = tkinter.Button(frame, text="Hello",
+        self.socio = tkinter.Label(frame, text="1 - Cadastrar Cliente")
+        self.socio.pack(side=tkinter.LEFT)
+
+        self.copia = tkinter.Label(frame, text="2 - Cadastrar Copia")
+        self.copia.pack(side=tkinter.LEFT)
+
+        self.emprestimo = tkinter.Label(frame, text="2 - Realizar Emprestimo")
+        self.emprestimo.pack(side=tkinter.LEFT)
+
+        self.escolha = tkinter.Text(frame, width = 10, height=1, font=("Helvetica",12))
+        self.escolha.pack(side=tkinter.BOTTOM)
+
+        self.ok = tkinter.Button(frame, text="OK",
                            command=self.say_hi)
-        self.hi_there.pack(side=tkinter.LEFT)
-        self.label = tkinter.Label(frame, text="Test")
-        self.label.pack(side=tkinter.LEFT)
+        self.ok.pack(side=tkinter.LEFT)
 
         root.mainloop()
 
