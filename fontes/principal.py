@@ -1,6 +1,9 @@
-import Emprestimo
-import Copia
-import Socio
+import _tkinter
+import tkinter
+
+##import Emprestimo
+##import Copia
+##import Socio
 
 class Principal():
     def __init__(self):
@@ -11,13 +14,15 @@ class Principal():
         self.inicializaCopias()
         self.inicializaSocios()
 
+        self.inicializaMenu()
+
 
     def inicializaCopias(self):
         c = Copia(1, 'As trancas do careca', '1:30', 2008, 'Comedia', 'Steven Spilberg', 'Brad Pitt', 'Angelina Jolie', '05/12/2009', 'bom', 5167)
         self.listaCopia.append(c)
         c = Copia(2, 'As trancas do careca', '1:30', 2008, 'Comedia', 'Steven Spilberg', 'Brad Pitt', 'Angelina Jolie', '25/12/2009', 'ruim', 5167)
         self.listaCopia.append(c)
-        c = Copia(3, 'As trancas do careca', '1:30', 2008, 'ComÃ©dia', 'Steven Spilberg', 'Brad Pitt', 'Angelina Jolie', '10/02/2010', 'bom', 5167)
+        c = Copia(3, 'As trancas do careca', '1:30', 2008, 'ComÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â©dia', 'Steven Spilberg', 'Brad Pitt', 'Angelina Jolie', '10/02/2010', 'bom', 5167)
         self.listaCopia.append(c)
 
         c = Copia(4, 'O pistoleiro sem dedo', '2:00', 2010, 'Acao', 'Dalton Trumbo', 'Jackie Chan', 'Antonio Banderas', '05/08/2010', 'bom', 5182)
@@ -88,3 +93,24 @@ class Principal():
         self.s = Socio('Joana', 4, '27221155')
         self.listaSocios.append(self.s)
 
+    def inicializaMenu(self):
+        root = tkinter.Tk()
+        frame = tkinter.Frame()
+        frame.pack()
+
+        self.pergunta = tkinter.Label(frame, text="Escolha a opção desejada: \n 1- Cadastrar Cliente \n 2 - Cadastrar Copia \n 3 - Cadastrar Emprestimo")
+        self.pergunta.pack(side=tkinter.TOP)
+
+        self.escolha = tkinter.Text(frame, width = 10, height=1, font=("Helvetica",12))
+        self.escolha.pack(side=tkinter.LEFT)
+
+        self.ok = tkinter.Button(frame, text="OK",
+                           command=self.say_hi)
+        self.ok.pack(side=tkinter.BOTTOM)
+
+        root.mainloop()
+
+    def say_hi(self):
+        print("hi there, everyone!")
+
+    def
