@@ -11,3 +11,4 @@ class Copia():
         self.dataAquisicao = v_dataAquisicao
         self.estado = v_estado
         self.concine = v_concine
+        self.newattr = v_newattr
