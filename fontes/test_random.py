@@ -4,12 +4,14 @@ import unittest
 class TestSequenceFunctions(unittest.TestCase):
 
     def setUp(self):
+        #inicializa seq a cada testcase
         self.seq = range(10)
 
     def test_shuffle(self):
         # make sure the shuffled sequence does not lose any elements
         random.shuffle(self.seq)
         self.seq.sort()
+        self.seq.reverse()
         self.assertEqual(self.seq, range(10))
 
         # should raise an exception for an immutable sequence
@@ -27,4 +29,6 @@ class TestSequenceFunctions(unittest.TestCase):
             self.assertTrue(element in self.seq)
 
 if __name__ == '__main__':
-    unittest.main()
+    #unittest.main()
+    suite = unittest.TestLoader().loadTestsFromTestCase(TestSequenceFunctions)
+    unittest.TextTestRunner(verbosity=2).run(suite)
