@@ -9,7 +9,10 @@ class Copia_Test(unittest.TestCase):
     def testNewattr(self):
         assert copia.newattr != None, "Nao inicializou newattr"
 
-
+    def suite():
+        suite = unittest.TestSuite()
+        suite.addTest(unittest.makeSuite(Copia_Test))
+        return suite
 
 if __name__ == '__main__':
     unittest.main()

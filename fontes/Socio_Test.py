@@ -14,5 +14,10 @@ class Socio_Test(unittest.TestCase):
         socio = Socio('Teste',1, '27223344')
         assert socio.telefone != None, "nao tem telefone!"
 
+    def suite():
+        suite = unittest.TestSuite()
+        suite.addTest(unittest.makeSuite(Socio_Teste))
+        return suite
+
 if __name__ == '__main__':
     unittest.main()
