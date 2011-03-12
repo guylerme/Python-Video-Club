@@ -13,7 +13,7 @@ class Test_Emprestimo(unittest.TestCase):
 
     def test_valor_fixo(self):
         empr = Emprestimo()
-        assert empr.valorFixo == 5, 'Valor fixo corrompido'
+        assert empr.valorFixo == 4, 'Valor fixo corrompido'
 
 ##    def test_data_fim(self):
 ##        empr = Emprestimo()
@@ -21,16 +21,33 @@ class Test_Emprestimo(unittest.TestCase):
 ##        assert self.empr.dataFim == None, 'Devolucao da fita nao registrada'
 
     def test_valor_pago_sem_multa(self):
-        data = datetime.date.today()
-
-## para refactoring: o -4 deve ser feito na data, nao no dia...
-        self.dataInicio = str(data.day - 4) + '/' + str(data.month) +'/' + str(data.year)
-
         empr = Emprestimo()
+        now = datetime.date.today()
+
+        prazo = datetime.timedelta(days = empr.diasPrazo) #Usa a regra de negÃ³cio para saber se houve atraso na entrega
+        di = now - prazo
+## Refatorado
+        self.dataInicio = str(di.day) + '/' + str(di.month) +'/' + str(di.year)
         empr.pegarFita(1,self.dataInicio,1)
         empr.devolverFita(1)
-        assert empr.valorPago == empr.valorFixo, 'Valor pago com juros indevidamente'
+        assert empr.valorPago == empr.valorFixo, 'Valor pago com juros'
+        ##self.assertEqual(empr.valorPago, empr.valorFixo) #Exibe os valores em vez da mensagem, que pode ser o 3º parm.
 
+    def test_valor_pago_com_multa(self):
+        empr = Emprestimo()
+        now = datetime.date.today()
+
+##Usa a regra de negocio com delta para simular atraso na entrega
+        prazo = datetime.timedelta(days = empr.diasPrazo + 5)
+        di = now - prazo
+## Refatorado
+        self.dataInicio = str(di.day) + '/' + str(di.month) +'/' + str(di.year)
+        empr.pegarFita(1,self.dataInicio,1)
+        empr.devolverFita(1)
+        assert empr.valorPago == empr.valorFixo, 'Valor pago com juros'
+
+    #suite: usado para compor o conjunto de testes a serem executados automaticamente
+    #quando formos executar todos os testes juntos
     def suite():
         suite = unittest.TestSuite()
         suite.addTest( unittest.makeSuite( Test_Emprestimo ) )

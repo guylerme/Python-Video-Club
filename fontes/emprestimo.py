@@ -9,7 +9,7 @@ class Emprestimo():
         self.dataInicio = None
         self.dataFim = None
         self.multa = 1
-
+        self.diasPrazo = 3
 
     def pegarFita(self, v_inscricao, v_dataInicio, v_codigoFita):
         self.inscricao = v_inscricao
@@ -28,8 +28,8 @@ class Emprestimo():
         dataInicioFormatada = datetime.datetime.fromtimestamp(time.mktime(time.strptime(self.dataInicio, time_format)))
 
         x = datetime.datetime.today().date() - dataInicioFormatada.date()
-        if (x.days) > 3:
-            self.valorPago = self.valorFixo + self.multa*(x.days - 3)
+        if (x.days) > self.diasPrazo:
+            self.valorPago = self.valorFixo + self.multa*(x.days - self.diasPrazo)
         else:
             self.valorPago = self.valorFixo
 
