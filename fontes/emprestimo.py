@@ -16,15 +16,13 @@ class Emprestimo():
         self.dataInicio = v_dataInicio
         self.codigo_fita = v_codigoFita
 
-
-
 ##    def devolverFitaComData(self, v_dataFim, v_valor):
 ##        self.dataFim = v_dataFim
 ##        self.valorPago = v_valor
 
     def devolverFita(self, v_codigo_fita):
-        data =datetime.datetime.today()
-        self.dataFim = str(data.day) + '/' + str(data.month) +'/' + str(data.year)
+##        data =datetime.datetime.today()
+##        self.dataFim = str(data.day) + '/' + str(data.month) +'/' + str(data.year)
 
         time_format = "%d/%m/%Y"
         dataInicioFormatada = datetime.datetime.fromtimestamp(time.mktime(time.strptime(self.dataInicio, time_format)))
