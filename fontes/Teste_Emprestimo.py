@@ -24,14 +24,14 @@ class Test_Emprestimo(unittest.TestCase):
         empr = Emprestimo()
         now = datetime.date.today()
 
-        prazo = datetime.timedelta(days = empr.diasPrazo) #Usa a regra de negÃ³cio para saber se houve atraso na entrega
+        prazo = datetime.timedelta(days = empr.diasPrazo) #Usa a regra de negocio para saber se houve atraso na entrega
         di = now - prazo
 ## Refatorado
         self.dataInicio = str(di.day) + '/' + str(di.month) +'/' + str(di.year)
         empr.pegarFita(1,self.dataInicio,1)
         empr.devolverFita(1)
         assert empr.valorPago == empr.valorFixo, 'Valor pago com juros'
-        ##self.assertEqual(empr.valorPago, empr.valorFixo) #Exibe os valores em vez da mensagem, que pode ser o 3º parm.
+        ##self.assertEqual(empr.valorPago, empr.valorFixo) #Exibe os valores em vez da mensagem, que pode ser o 3Âº parm.
 
     def test_valor_pago_com_multa(self):
         empr = Emprestimo()

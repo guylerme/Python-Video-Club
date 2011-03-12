@@ -9,7 +9,7 @@ class Emprestimo():
         self.dataInicio = None
         self.dataFim = None
         self.multa = 1
-        self.diasPrazo = 3
+        self.diasPrazo = 3 #72h
 
     def pegarFita(self, v_inscricao, v_dataInicio, v_codigoFita):
         self.inscricao = v_inscricao
