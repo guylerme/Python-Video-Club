@@ -24,10 +24,11 @@ class Copia_Test(unittest.TestCase):
         assert data <= hoje, "Data deve ser valida e ser <= hoje"
 
     def testCopiaEstado(self):
-        """Verifica se o estado da fita ÃƒÂ© bom ou ruim"""
+        """Verifica se o estado da fita eh bom ou ruim"""
         assert self.copia.estado.lower() == "bom" or self.copia.estado.lower() == "ruim", 'Estado da copia deve ser bom ou ruim'
 
     def testCopiaStrings(self):
+        """setElenco deve emitir erro quando faltar informacao"""
         self.assertRaises(copia.errCopiaMissingValues, self.copia.setElenco, '','','')
 
     def suite():
