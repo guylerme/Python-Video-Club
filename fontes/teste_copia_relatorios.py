@@ -1,13 +1,14 @@
 import unittest
-import copia
+import principal
 
 class test_copia_relatorios(unittest.TestCase):
-    def testRelMalEstado():
-        """Rel. de mal estado soh pode ter copia com estado ruim"""
-        rel = Copia().RelMalEstado()
-        for elem in rel:
-            self.assertTrue(elem.estado.lower(), 'bom')
+    princ = principal.Principal()
 
+    def testRelMalEstado(self):
+        """Rel. de mal estado soh pode ter copia com estado ruim"""
+        rel = self.princ.RelMalEstado()
+        for elem in rel:
+            self.assertEqual(elem.estado.lower(), 'ruim')
 
     def suite():
         suite = unittest.TestSuite()
