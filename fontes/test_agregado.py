@@ -1,12 +1,12 @@
 import unittest
-import Copia_test
-import Socio_test
+import Copia_Test
+import Socio_Test
 import Teste_Emprestimo
 
 #criando as suites
-suite_copia = Copia_test.suite()
-suite_socio = Socio_test.suite()
-suite_emprestimo = Teste_Emprestimo.suite()
+suite_copia = Copia_Test.Copia_Test.suite()
+suite_socio = Socio_Test.Socio_Test.suite()
+suite_emprestimo = Teste_Emprestimo.Test_Emprestimo.suite()
 
 #criando a suite principal
 suite_principal = unittest.TestSuite()
