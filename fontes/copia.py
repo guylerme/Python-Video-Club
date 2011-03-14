@@ -39,15 +39,16 @@ class Copia():
 ##        pass
         if (not p_art1) and (not p_art2) and (not p_diretor):
             raise errCopiaMissingValues #, 'Nenhum dos atributos do elenco foi informado'
-
-        if not p_art1:
+        elif not p_art1:
             raise self.erro #, 'Nome do artista 1 nao informado'
-
-        if not p_art2:
+        elif not p_art2:
             raise errCopiaMissingValues #, 'Nome do artista 2 nao informado'
-
-        if not p_diretor:
+        elif not p_diretor:
             raise errCopiaMissingValues #,'Nome do diretor nao informado'
+        else:
+            self.artistaPrincipal1 = p_art1
+            self.artistaPrincipal2 = p_art2
+            self.nomeDiretor = p_diretor
 
 
 
