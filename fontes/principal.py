@@ -14,7 +14,6 @@ class Principal():
         self.inicializaSocios()
         self.inicializaMenu()
 
-
     def inicializaCopias(self):
         c = copia.Copia(1, 'As trancas do careca', '1:30', 2008, 'Comedia', 'Steven Spilberg', 'Brad Pitt', 'Angelina Jolie', '05/12/2009', 'bom', 5167)
         self.listaCopia.append(c)
@@ -115,6 +114,17 @@ class Principal():
             if elem.estado.lower() == 'ruim':
                 rel.append(elem)
         return rel
+
+    def RelQuantCopias(self):
+        pass
+
+    def getQuantCopiasTitulo(self, v_concine):
+        numCopias = 0
+        for elem in self.listaCopia:
+            if elem.concine == v_concine:
+                numCopias += 1
+        return numCopias
+
 
     def say_hi(self):
         print("hi there, everyone!")
