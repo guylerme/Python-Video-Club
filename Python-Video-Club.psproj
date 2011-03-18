@@ -15,57 +15,60 @@ Name=fontes
 
 [Project\ChildNodes\Node0\ChildNodes\Node0\ChildNodes\Node0]
 ClassName=TProjectFileNode
-FileName=C:\Users\Alexandre Paiva\Python-Video-Club\fontes\copia.py
+FileName=H:\Guylerme\Pos\Software Livre\trabalho\fontes\copia.py
 
 [Project\ChildNodes\Node0\ChildNodes\Node0\ChildNodes\Node1]
 ClassName=TProjectFileNode
-FileName=C:\Users\Alexandre Paiva\Python-Video-Club\fontes\Copia_Test.py
+FileName=H:\Guylerme\Pos\Software Livre\trabalho\fontes\Copia_Test.py
 
 [Project\ChildNodes\Node0\ChildNodes\Node0\ChildNodes\Node2]
 ClassName=TProjectFileNode
-FileName=C:\Users\Alexandre Paiva\Python-Video-Club\fontes\emprestimo.py
+FileName=H:\Guylerme\Pos\Software Livre\trabalho\fontes\emprestimo.py
 
 [Project\ChildNodes\Node0\ChildNodes\Node0\ChildNodes\Node3]
 ClassName=TProjectFileNode
-FileName=C:\Users\Alexandre Paiva\Python-Video-Club\fontes\Emprestimo_Test.py
+FileName=H:\Guylerme\Pos\Software Livre\trabalho\fontes\Emprestimo_Test.py
 
 [Project\ChildNodes\Node0\ChildNodes\Node0\ChildNodes\Node4]
 ClassName=TProjectFileNode
-FileName=C:\Users\Alexandre Paiva\Python-Video-Club\fontes\principal.py
+FileName=H:\Guylerme\Pos\Software Livre\trabalho\fontes\principal.py
 
 [Project\ChildNodes\Node0\ChildNodes\Node0\ChildNodes\Node5]
 ClassName=TProjectFileNode
-FileName=C:\Users\Alexandre Paiva\Python-Video-Club\fontes\Principal_Test.py
+FileName=H:\Guylerme\Pos\Software Livre\trabalho\fontes\socio.py
 
 [Project\ChildNodes\Node0\ChildNodes\Node0\ChildNodes\Node6]
 ClassName=TProjectFileNode
-FileName=C:\Users\Alexandre Paiva\Python-Video-Club\fontes\socio.py
+FileName=H:\Guylerme\Pos\Software Livre\trabalho\fontes\Socio_Test.py
 
 [Project\ChildNodes\Node0\ChildNodes\Node0\ChildNodes\Node7]
 ClassName=TProjectFileNode
-FileName=C:\Users\Alexandre Paiva\Python-Video-Club\fontes\Socio_Test.py
-
-[Project\ChildNodes\Node0\ChildNodes\Node0\ChildNodes\Node8]
-ClassName=TProjectFileNode
-FileName=C:\Users\Alexandre Paiva\Python-Video-Club\fontes\test_agregado.py
-
-[Project\ChildNodes\Node0\ChildNodes\Node0\ChildNodes\Node9]
-ClassName=TProjectFileNode
-FileName=C:\Users\Alexandre Paiva\Python-Video-Club\fontes\test_random.py
-
-[Project\ChildNodes\Node0\ChildNodes\Node0\ChildNodes\Node10]
-ClassName=TProjectFileNode
-FileName=C:\Users\Alexandre Paiva\Python-Video-Club\fontes\teste_copia_relatorios.py
-
-[Project\ChildNodes\Node0\ChildNodes\Node0\ChildNodes\Node11]
-ClassName=TProjectFileNode
-FileName=C:\Users\Alexandre Paiva\Python-Video-Club\fontes\Teste_Emprestimo.py
+FileName=H:\Guylerme\Pos\Software Livre\trabalho\fontes\teste_emprestimo.py
 
 [Project\ChildNodes\Node0\ChildNodes\Node0\ChildNodes]
-Count=12
+Count=8
+
+[Project\ChildNodes\Node0\ChildNodes\Node1]
+ClassName=TProjectFolderNode
+Name=Teste Unitario
+
+[Project\ChildNodes\Node0\ChildNodes\Node1\ChildNodes\Node0]
+ClassName=TProjectFileNode
+FileName=H:\Guylerme\Pos\Software Livre\trabalho\Teste Unitario\copia_test.py
+
+[Project\ChildNodes\Node0\ChildNodes\Node1\ChildNodes\Node1]
+ClassName=TProjectFileNode
+FileName=H:\Guylerme\Pos\Software Livre\trabalho\Teste Unitario\emprestimo_test.py
+
+[Project\ChildNodes\Node0\ChildNodes\Node1\ChildNodes\Node2]
+ClassName=TProjectFileNode
+FileName=H:\Guylerme\Pos\Software Livre\trabalho\Teste Unitario\socio_test.py
+
+[Project\ChildNodes\Node0\ChildNodes\Node1\ChildNodes]
+Count=3
 
 [Project\ChildNodes\Node0\ChildNodes]
-Count=1
+Count=2
 
 [Project\ChildNodes\Node1]
 ClassName=TProjectRunConfiguationsNode
