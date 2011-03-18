@@ -5,7 +5,12 @@ import emprestimo
 import copia
 import socio
 
+class errPrincipal(Exception): pass
+class errIncorrectValue(Exception): pass
+
 class Principal():
+    erro = errIncorrectValue() #Usado na classe de teste. Nao remover
+
     def __init__(self):
         self.listaCopia = []
         self.listaSocios = []
@@ -115,16 +120,36 @@ class Principal():
                 rel.append(elem)
         return rel
 
+    #Retorna lista filtrada com os titulos das copias
     def RelQuantCopias(self):
-        pass
+        rel = []
+        atual = 0
+        for elem in self.listaCopia:
+            if elem.concine != atual:
+                #Add novo atributo ao elemento
+                elem.quantCopias = self.getQuantCopiasTitulo(elem.concine)
+                rel.append(elem)
+                atual = elem.concine
+        return rel
 
+    #Imprime relatorio
+    def RelPrintQuantCopias(self):
+        rel = self.RelQuantCopias()
+        atual = 0
+        print('\nRelatorio quantitativo de copias')
+        print('\n\nCONC','TITULO'.ljust(30),'COPIAS')
+        print('-'*4,'-'*30,'------')
+        for elem in rel:
+            print(elem.concine, elem.titulo.ljust(30), elem.quantCopias )
+        print('\n     -------- fim da listagem... --------')
+
+    #metodo escalar
     def getQuantCopiasTitulo(self, v_concine):
         numCopias = 0
         for elem in self.listaCopia:
             if elem.concine == v_concine:
                 numCopias += 1
         return numCopias
-
 
     def say_hi(self):
         print("hi there, everyone!")

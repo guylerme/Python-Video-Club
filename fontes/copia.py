@@ -2,7 +2,7 @@
 class errCopiaMissingValues(Exception): pass
 
 class Copia():
-    erro = errCopiaMissingValues
+    erro = errCopiaMissingValues  #Usado na classe de testes. Nao remover
 
     def __init__(self, v_codigo = 0, v_titulo='', v_duracao=0, v_ano=0,
         v_genero='', v_nomeDiretor='', v_artista1='', v_artista2='', v_dataAquisicao=None,
