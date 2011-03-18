@@ -21,6 +21,7 @@ class Test_Emprestimo(unittest.TestCase):
 ##        assert self.empr.dataFim == None, 'Devolucao da fita nao registrada'
 
     def test_valor_pago_sem_multa(self):
+        """Valor pago nao deve ter multa quando pago em dia"""
         empr = Emprestimo()
         now = datetime.date.today()
 
@@ -30,10 +31,12 @@ class Test_Emprestimo(unittest.TestCase):
         self.dataInicio = str(di.day) + '/' + str(di.month) +'/' + str(di.year)
         empr.pegarFita(1,self.dataInicio,1)
         empr.devolverFita(1)
-        assert empr.valorPago == empr.valorFixo, 'Valor pago com juros'
-        ##self.assertEqual(empr.valorPago, empr.valorFixo) #Exibe os valores em vez da mensagem, que pode ser o 3Âº parm.
+        #assert empr.valorPago == empr.valorFixo, 'Valor pago com juros'
+        self.assertEqual(empr.valorPago,empr.valorFixo, 'Valor pago com juros')
+        ##self.assertEqual(empr.valorPago, empr.valorFixo) #Exibe os valores em vez da mensagem, que pode ser o 3Ã‚Âº parm.
 
     def test_valor_pago_com_multa(self):
+        """Valor pago com multa"""
         empr = Emprestimo()
         now = datetime.date.today()
 
@@ -44,7 +47,8 @@ class Test_Emprestimo(unittest.TestCase):
         self.dataInicio = str(di.day) + '/' + str(di.month) +'/' + str(di.year)
         empr.pegarFita(1,self.dataInicio,1)
         empr.devolverFita(1)
-        assert empr.valorPago == empr.valorFixo, 'Valor pago com juros'
+        #assert empr.valorPago == empr.valorFixo, 'Valor pago com juros'
+        self.assertEqual( empr.valorPago, empr.valorFixo, 'Valor pago com multa')
 
     #suite: usado para compor o conjunto de testes a serem executados automaticamente
     #quando formos executar todos os testes juntos
