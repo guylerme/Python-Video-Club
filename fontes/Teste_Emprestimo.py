@@ -1,11 +1,9 @@
 import unittest
+import time, datetime
 from emprestimo import Emprestimo
 
 class Test_Emprestimo(unittest.TestCase):
-    empr = Emprestimo()
-    assert empr != None, "Classe inicializada incorretamente quando construtor nao tem parametro"
 
-<<<<<<< HEAD
 ##    def setUp(self):
 ##        empr = Emprestimo()
 
@@ -58,12 +56,6 @@ class Test_Emprestimo(unittest.TestCase):
         suite = unittest.TestSuite()
         suite.addTest( unittest.makeSuite( Test_Emprestimo ) )
         return suite
-=======
-def suite():
-    suite = unittest.TestSuite()
-    suite.addTest( unittest.makeSuite( Test_Emprestimo ) )
-    return suite
->>>>>>> 82b9139993f473e2486c7798d80300050a16bd9b
 
 if __name__ == '__main__':
     unittest.main()

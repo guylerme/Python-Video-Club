@@ -16,7 +16,7 @@ class Socio_Test(unittest.TestCase):
 
     def suite():
         suite = unittest.TestSuite()
-        suite.addTest(unittest.makeSuite(Socio_Teste))
+        suite.addTest(unittest.makeSuite(Socio_Test))
         return suite
 
 if __name__ == '__main__':
