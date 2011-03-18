@@ -1,6 +1,3 @@
-import _tkinter
-import tkinter
-
 import emprestimo
 import copia
 import socio
@@ -97,21 +94,6 @@ class Principal():
 
     def inicializaMenu(self):
         pass
-##        root = tkinter.Tk()
-##        frame = tkinter.Frame()
-##        frame.pack()
-##
-##        self.pergunta = tkinter.Label(frame, text="Escolha a opcao desejada: \n 1- Cadastrar Cliente \n 2 - Cadastrar Copia \n 3 - Cadastrar Emprestimo")
-##        self.pergunta.pack(side=tkinter.TOP)
-##
-##        self.escolha = tkinter.Text(frame, width = 10, height=1, font=("Helvetica",12))
-##        self.escolha.pack(side=tkinter.LEFT)
-##
-##        self.ok = tkinter.Button(frame, text="OK",
-##                           command=self.say_hi)
-##        self.ok.pack(side=tkinter.BOTTOM)
-##
-##        root.mainloop()
 
     def RelMalEstado(self):
         rel = []
@@ -150,6 +132,3 @@ class Principal():
             if elem.concine == v_concine:
                 numCopias += 1
         return numCopias
-
-    def say_hi(self):
-        print("hi there, everyone!")

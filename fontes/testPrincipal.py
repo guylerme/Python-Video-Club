@@ -1,13 +1,14 @@
 import unittest
-#from principal import Principal
+from principal import Principal
 
 class Principal_Test(unittest.TestCase):
     def testInicializaCopias(self):
-        """Verifica se a lista de copias esta vazia"""
+        """Garantir que a lista das copias estah carregada"""
         principal = Principal()
         assert principal.listaCopia != [], "lista vazia!"
 
     def testInicializaSocios(self):
+        """Garantir que a lista dos socios estah carregada"""
         principal = Principal()
         assert principal.listaSocios != [], "lista vazia!"
 
