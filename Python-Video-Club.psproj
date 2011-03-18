@@ -1,0 +1,81 @@
+[PyScripter]
+Version=1.9.9.6
+
+[Project]
+ClassName=TProjectRootNode
+StoreRelativePaths=FALSE
+ShowFileExtensions=FALSE
+
+[Project\ChildNodes\Node0]
+ClassName=TProjectFilesNode
+
+[Project\ChildNodes\Node0\ChildNodes\Node0]
+ClassName=TProjectFolderNode
+Name=fontes
+
+[Project\ChildNodes\Node0\ChildNodes\Node0\ChildNodes\Node0]
+ClassName=TProjectFileNode
+FileName=H:\Guylerme\Pos\Software Livre\trabalho\fontes\copia.py
+
+[Project\ChildNodes\Node0\ChildNodes\Node0\ChildNodes\Node1]
+ClassName=TProjectFileNode
+FileName=H:\Guylerme\Pos\Software Livre\trabalho\fontes\Copia_Test.py
+
+[Project\ChildNodes\Node0\ChildNodes\Node0\ChildNodes\Node2]
+ClassName=TProjectFileNode
+FileName=H:\Guylerme\Pos\Software Livre\trabalho\fontes\emprestimo.py
+
+[Project\ChildNodes\Node0\ChildNodes\Node0\ChildNodes\Node3]
+ClassName=TProjectFileNode
+FileName=H:\Guylerme\Pos\Software Livre\trabalho\fontes\Emprestimo_Test.py
+
+[Project\ChildNodes\Node0\ChildNodes\Node0\ChildNodes\Node4]
+ClassName=TProjectFileNode
+FileName=H:\Guylerme\Pos\Software Livre\trabalho\fontes\principal.py
+
+[Project\ChildNodes\Node0\ChildNodes\Node0\ChildNodes\Node5]
+ClassName=TProjectFileNode
+FileName=H:\Guylerme\Pos\Software Livre\trabalho\fontes\socio.py
+
+[Project\ChildNodes\Node0\ChildNodes\Node0\ChildNodes\Node6]
+ClassName=TProjectFileNode
+FileName=H:\Guylerme\Pos\Software Livre\trabalho\fontes\Socio_Test.py
+
+[Project\ChildNodes\Node0\ChildNodes\Node0\ChildNodes\Node7]
+ClassName=TProjectFileNode
+FileName=H:\Guylerme\Pos\Software Livre\trabalho\fontes\teste_emprestimo.py
+
+[Project\ChildNodes\Node0\ChildNodes\Node0\ChildNodes]
+Count=8
+
+[Project\ChildNodes\Node0\ChildNodes\Node1]
+ClassName=TProjectFolderNode
+Name=Teste Unitario
+
+[Project\ChildNodes\Node0\ChildNodes\Node1\ChildNodes\Node0]
+ClassName=TProjectFileNode
+FileName=H:\Guylerme\Pos\Software Livre\trabalho\Teste Unitario\copia_test.py
+
+[Project\ChildNodes\Node0\ChildNodes\Node1\ChildNodes\Node1]
+ClassName=TProjectFileNode
+FileName=H:\Guylerme\Pos\Software Livre\trabalho\Teste Unitario\emprestimo_test.py
+
+[Project\ChildNodes\Node0\ChildNodes\Node1\ChildNodes\Node2]
+ClassName=TProjectFileNode
+FileName=H:\Guylerme\Pos\Software Livre\trabalho\Teste Unitario\socio_test.py
+
+[Project\ChildNodes\Node0\ChildNodes\Node1\ChildNodes]
+Count=3
+
+[Project\ChildNodes\Node0\ChildNodes]
+Count=2
+
+[Project\ChildNodes\Node1]
+ClassName=TProjectRunConfiguationsNode
+
+[Project\ChildNodes]
+Count=2
+
+[Project\ExtraPythonPath]
+Count=0
+
